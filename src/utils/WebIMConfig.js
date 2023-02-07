@@ -17,7 +17,7 @@ var config = {
 	// appkey:"gdpwq123#ceshi",
 	// appkey: '5101220107132865#test',
 	// appkey: 'easemob-demo#chatdemoui',
-	appkey: 'easemob#easeim',
+	appkey: '1123230111161224#demo',
 	// appkey: 'easemobpush#push1',
 	// appkey: '81446724#514456',
 	// appkey: '41117440#383391',
@@ -25,7 +25,7 @@ var config = {
 	/*
      * Application Host
      */
-	Host: 'easemob.com',
+	Host: 'a1.easemob.com',
 	/*
      * Whether to use HTTPS
      * @parameter {Boolean} true or false
@@ -83,7 +83,7 @@ var config = {
      *  cn: chinese
      *  us: english
      */
-	i18n: 'us',
+	i18n: 'cn',
 	/*
      * Set to auto sign-in
      */
@@ -114,7 +114,7 @@ var config = {
      */
 	enableLocalStorage: true,
 
-	AgoraAppId: '15cb0d28b87b425ea613fc46f7c9f974'
+	AgoraAppId: 'e3a6908043c84bde84e883d23b361c0a'
 	/* 需要替换成自己的声网 appId，此 appId 有限量，仅供参考使用，同时获取声网 token 的接口仅能供此 appId 使用，换成自己的 appId 后需要自己去实现 app server 获取声网token。 */
 };
 export default config;

@@ -466,7 +466,7 @@ WebIM.conn.listen({
 			return Message.error('请输入账号密码');
 		}
 		else if(message.type == 28){
-			return console.log('未登陆');
+			return Message.error('未登陆');
 		}
 		else if(_.get(message, 'data.type') === 17 && JSON.parse(message.data.data).error_description == 'user not found'){
 			return Message.error('用户名不存在！');
@@ -480,8 +480,9 @@ WebIM.conn.listen({
 		else if(message.type == '504'){
 			return Message.error('消息撤回失败');
 		}
+
 		// 报错返回到登录页面
-		// Vue.$router.push({ path: '/login' });
+		this.$router.push('/login');
 	}, // 失败回调
 	onRecallMessage: message => {
 		console.log('撤回消息', message);

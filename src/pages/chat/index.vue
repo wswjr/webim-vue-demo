@@ -383,6 +383,7 @@ export default{
 		toLogout(){
 			this.onLogout();
 			this.initChatState();
+			this.$router.push('/login')
 		},
 		onCollapse(collapsed, type){
 			if(type != 'responsive'){
@@ -615,8 +616,8 @@ export default{
 				}, 30000);
 				break;
 			case 2:
-				console.log('this.$refs.multiCall>>', this.$refs.multiCall);
-				// this.$refs.multiCall.handleSubmit(tos,this.$route.params.id)
+				// console.log('this.$refs.multiCall>>', this.$refs.multiCall);
+				this.$refs.multiCall.handleSubmit(tos, this.$route.params.id)
 				break;
 			default:
 				break;

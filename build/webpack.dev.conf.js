@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const portfinder = require('portfinder');
 
+
 const HOST = process.env.HOST;
 const PORT = process.env.PORT && Number(process.env.PORT);
 const isHttps = process.env.HTTPS === 'true';
@@ -28,7 +29,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 				{ from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
 			],
 		},
-		https: isHttps,
+		https: true,
 		hot: true,
 		contentBase: false, // since we use CopyWebpackPlugin.
 		compress: true,

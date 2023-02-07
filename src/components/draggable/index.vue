@@ -105,8 +105,8 @@ export default{
 <style>
 .drag{
 	position: absolute;
-	left: 5%;
-	top: 10%;
+	/* left: 5%; */
+	top: 20%;
 	margin: auto;
 	border-radius: 2px;
 	/* background: #f3f3f3; */
